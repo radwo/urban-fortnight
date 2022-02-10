@@ -1,0 +1,13 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "This step will always run?"
