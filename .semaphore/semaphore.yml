@@ -12,3 +12,4 @@ blocks:
           commands:
             - checkout
             - ls -lia
+            - env
