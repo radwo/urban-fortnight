@@ -13,3 +13,6 @@ blocks:
             - checkout
             - ls -lia
             - env
+      secrets:
+        - name: organization
+        - name: urban-fortnight-drei
