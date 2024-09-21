@@ -10,8 +10,5 @@ blocks:
       jobs:
         - name: Test
           commands:
-            - checkout
             - ls -lia
             - env
-      secrets:
-        - name: organization
