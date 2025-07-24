@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="2" errors="0" time="0.850294">
+  <testsuite tests="3" failures="2" time="0.063000" name="github.com/semaphoreci-demos/semaphore-demo-go" timestamp="2024-05-27T22:14:24Z">
+    <properties>
+      <property name="go.version" value="go1.22.3 linux/amd64"></property>
+    </properties>
+    <testcase classname="github.com/semaphoreci-demos/semaphore-demo-go" name="Test_count" time="0.020000">
+      <failure message="Failed" type="">=== RUN   Test_count&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;    main_test.go:84: Select query returned 0&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;--- FAIL: Test_count (0.02s)&#xA;</failure>
+    </testcase>
+    <testcase classname="github.com/semaphoreci-demos/semaphore-demo-go" name="Test_record" time="0.000000">
+      <failure message="Failed" type="">=== RUN   Test_record&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;Serving: /getdata&#xA;Served: &#xA;    main_test.go:144: Wrong server response!&#xA;dial tcp [::1]:5432: connect: connection refused&#xA;--- FAIL: Test_record (0.00s)&#xA;</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
