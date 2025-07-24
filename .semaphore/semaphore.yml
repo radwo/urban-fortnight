@@ -11,3 +11,4 @@ blocks:
           commands:
             - ls -lia
             - echo "2"
+            - test-results publish report.xml
