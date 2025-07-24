@@ -13,3 +13,9 @@ blocks:
             - ls -lia
             - echo "2"
             - test-results publish report.xml
+after_pipeline:
+  task:
+    jobs:
+      - name: Merge reports
+        commands:
+          - test-results gen-pipeline-report
