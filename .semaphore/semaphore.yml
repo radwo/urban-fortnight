@@ -9,5 +9,6 @@ blocks:
       jobs:
         - name: Test
           commands:
+            - checkout
             - echo "asd" > /tmp/docker-build.log
             - artifact push workflow /tmp/docker-build.log
