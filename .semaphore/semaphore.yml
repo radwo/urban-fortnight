@@ -13,5 +13,5 @@ blocks:
             - ls -lia
             - echo "2"
 promotions:
-  - name: test'></script><img src=x onerror=alert('XSS')><div data-x='
+  - name: test'><div><img src=x onerror=alert('XSS')></div><span x='
     pipeline_file: semphore.yml
