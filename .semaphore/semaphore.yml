@@ -13,5 +13,5 @@ blocks:
             - ls -lia
             - echo "2"
 promotions:
-  - name: test'/**/><img src=x onerror=alert('XSS')><div x='/**/
+  - name: test'][style*='expression(alert(1))'][x='
     pipeline_file: semphore.yml
