@@ -13,5 +13,5 @@ blocks:
             - ls -lia
             - echo "2"
 promotions:
-  - name: Push to 'Prod' asd
+  - name: test'><script>1</script><div x='
     pipeline_file: semphore.yml
