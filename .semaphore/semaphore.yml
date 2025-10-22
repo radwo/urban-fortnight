@@ -14,7 +14,7 @@ blocks:
             - ls -lia
             - echo "2"
             - test-results publish report.xml
-  - name: Build & Test
+  - name: Build & Test2
     task:
       jobs:
         - name: Test
