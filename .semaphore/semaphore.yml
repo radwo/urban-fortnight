@@ -13,6 +13,8 @@ blocks:
             - checkout
             - ls -lia
             - echo "2"
+            - cache restore foo
+            - cache store foo report.xml
             - test-results publish report.xml
   - name: Build & Test2
     task:
