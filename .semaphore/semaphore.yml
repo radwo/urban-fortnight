@@ -9,6 +9,9 @@ agent:
       image: 'registry.semaphoreci.com/ubuntu:22.04'
     - name: c2
       image: 'postgres:17'
+      env_vars:
+        - name: POSTGRES_PASSWORD
+          value: foooocatr
 blocks:
   - name: Build & Test
     task:
