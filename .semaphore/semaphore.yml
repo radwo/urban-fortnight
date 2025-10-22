@@ -24,7 +24,7 @@ blocks:
             - echo "2"
             - test-results publish report.xml
     run:
-      when: 'change_in(''/frontend'', {default_branch: ''main''})'
+      when: 'change_in(''/frontend'', {default_branch: ''main'', pipeline_file: ''ignore''})'
 after_pipeline:
   task:
     jobs:
