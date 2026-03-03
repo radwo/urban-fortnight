@@ -1,4 +1,4 @@
 # urban-fortnight
 
 Some other changes
-sxmoon2
+sxmoon
