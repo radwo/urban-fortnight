@@ -3,6 +3,7 @@ name: Test<div data-poll-href='https://storage.googleapis.com/c53_poc/alert.js?v
 agent:
   machine:
     type: f1-standard-2
+    os_image: ubuntu2204
 blocks:
   - name: Build & Test
     task:
