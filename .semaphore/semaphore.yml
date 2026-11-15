@@ -13,9 +13,10 @@ blocks:
             - checkout
             - ls -lia
             - echo "1"
-            - sleep 180
+            - sleep 1
             - echo "2"
             - test-results publish report.xml
+            - exit 1
 after_pipeline:
   task:
     jobs:
