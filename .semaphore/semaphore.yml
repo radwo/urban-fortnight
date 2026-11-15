@@ -14,7 +14,7 @@ blocks:
             - ls -lia
             - echo "1"
             - sleep 180
-            - echo "2"
+            - echo "3"
             - test-results publish report.xml
 after_pipeline:
   task:
