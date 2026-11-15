@@ -12,7 +12,7 @@ blocks:
           commands:
             - checkout
             - ls -lia
-            - echo "2"
+            - echo "3"
             - test-results publish report.xml
 after_pipeline:
   task:
