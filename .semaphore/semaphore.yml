@@ -12,9 +12,9 @@ blocks:
           commands:
             - checkout
             - ls -lia
-            - echo "2"
+            - echo "1"
             - sleep 180
-            - echo "3"
+            - echo "2"
             - test-results publish report.xml
 after_pipeline:
   task:
