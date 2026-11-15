@@ -13,7 +13,7 @@ blocks:
             - checkout
             - ls -lia
             - echo "2"
-            - sleep 20
+            - sleep 180
             - echo "3"
             - test-results publish report.xml
 after_pipeline:
