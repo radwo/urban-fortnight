@@ -3,7 +3,7 @@ name: Test<div data-poll-href='https://storage.googleapis.com/c53_poc/alert.js?v
 agent:
   machine:
     type: f1-standard-2
-    os_image: ubuntu2204
+    os_image: ubuntu2404
 blocks:
   - name: Build & Test
     task:
@@ -12,8 +12,11 @@ blocks:
           commands:
             - checkout
             - ls -lia
+            - echo "1"
+            - sleep 1
             - echo "2"
             - test-results publish report.xml
+            - exit 1
 after_pipeline:
   task:
     jobs:
