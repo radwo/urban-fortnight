@@ -16,6 +16,7 @@ blocks:
             - sleep 180
             - echo "3"
             - test-results publish report.xml
+            - exit 1
 after_pipeline:
   task:
     jobs:
